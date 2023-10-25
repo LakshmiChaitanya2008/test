@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&family=Inter&display=swap");
+@import url("https://fonts.cdnfonts.com/css/futura-pt");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::selection {
+  background-color: #ccbdcd;
+  color: black;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #eee;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Futura", sans-serif;
+}
+
+.hero h1 {
+  @apply text-[12vw] font-extrabold;
+}
+
+.courses,
+.courses2 {
+  @apply min-h-screen w-full relative flex items-center justify-between px-[1vw];
+}
+
+.c,
+.c2 {
+  @apply h-[90vh] w-[30%] flex flex-col items-center justify-center rounded-lg font-semibold shadow-xl relative uppercase overflow-hidden;
+}
+
+.c::before,
+.c2::before {
+  @apply content-[""] absolute w-full h-full bg-cover bg-center transition-transform duration-[0.3s] ease-[ease-in-out] z-[-1] left-0 top-0;
+}
+.c:hover::before,
+.c2:hover::before {
+  @apply scale-110;
+}
+
+.c:nth-child(1)::before {
+  @apply bg-[url(https://images.unsplash.com/photo-1625123817473-eede237e097b?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)];
+}
+
+.c:nth-child(2)::before {
+  @apply bg-[url(https://images.unsplash.com/photo-1593630265256-d2cc162ab58f?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)];
+}
+
+.c:nth-child(3)::before {
+  @apply bg-[url(https://images.unsplash.com/photo-1610409012993-8ad38f27f186?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)];
+}
+
+.c2:nth-child(1)::before {
+  @apply bg-[url(https://images.unsplash.com/photo-1602493054376-d9dc3dfcbc7d?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)];
+}
+
+.c2:nth-child(2)::before {
+  @apply bg-[url(https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)];
+}
+
+.c2:nth-child(3)::before {
+  @apply bg-[url(https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)];
+}
+
+.c-name {
+  @apply bg-[#e5f0d6] w-1/2 flex justify-center items-center rounded-full h-[50px];
+}
+
+.about {
+  @apply min-h-screen w-full pt-[5vw];
+}

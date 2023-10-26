@@ -24,7 +24,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="hero leading-[14vw] pt-[36vh] min-h-screen relative tracking-[-8px] h-full w-full">
+    <div className="hero leading-[14vw] pt-[10vh] min-h-screen relative tracking-[-8px] h-full w-full">
       <h1 ref={h11}>BUILD</h1>
       <h1 ref={h22}>YOUR CAREER.</h1>
     </div>

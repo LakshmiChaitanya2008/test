@@ -1,37 +1,20 @@
-import { gsap } from "gsap";
-import { useLayoutEffect, useRef } from "react";
+// Nav.tsx
+import React, { useState } from "react";
+import OverlayNav from "./OverlayNav";
 
 export default function Nav() {
-  const nav = useRef<HTMLElement | any>();
-  const ham = useRef<HTMLElement | any>();
-
-  useLayoutEffect(() => {
-    gsap.to(nav.current, {
-      opacity: 1,
-
-      duration: 1,
-    });
-
-    gsap.from(ham.current, {
-      x: 100,
-
-      delay: 1.3,
-    });
-  }, []);
+  const [isOverlayOpen, setOverlayOpen] = useState(false);
 
   return (
-    <nav
-      className="flex justify-between w-full absolute pr-16 mt-4 opacity-0"
-      ref={nav}
-    >
+    <nav className="flex justify-between w-full pr-16 mt-4">
       <div className="flex">
-        <img src="logo.png" width={140} className="" />
+        <img src="logo.png" width={140} alt="Logo" className="" />
         <h1 className="mt-10 text-2xl ml-7 tracking-wider">
           AANM & VVRSR POLYTECHNIC
         </h1>
       </div>
 
-      <p className="mt-9" ref={ham} onClick={() => alert("")}>
+      <p className="mt-9 cursor-pointer" onClick={() => setOverlayOpen(true)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -47,6 +30,12 @@ export default function Nav() {
           />
         </svg>
       </p>
+
+      <OverlayNav
+        isOpen={isOverlayOpen}
+        onClose={() => setOverlayOpen(false)}
+        setOverlayOpen={setOverlayOpen}
+      />
     </nav>
   );
 }

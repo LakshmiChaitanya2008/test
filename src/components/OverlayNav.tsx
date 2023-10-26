@@ -1,5 +1,5 @@
 // OverlayNav.tsx
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
 export default function OverlayNav({
@@ -12,7 +12,6 @@ export default function OverlayNav({
   setOverlayOpen: (value: boolean) => void;
 }) {
   const overlayRef = useRef<HTMLDivElement | null>(null);
-  const menuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (isOpen) {

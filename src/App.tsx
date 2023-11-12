@@ -2,7 +2,7 @@ import About from "./components/About";
 import Courses from "./components/Courses";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
-import { Link, Route } from "wouter";
+import { Route } from "wouter";
 import CoursesPage from "./pages/CoursesPage";
 import FacilitiesPage from "./pages/FacilitiesPage";
 import GalleryPage from "./pages/GalleryPage";

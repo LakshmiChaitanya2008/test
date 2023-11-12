@@ -2,7 +2,7 @@ import { Carousel } from "react-responsive-carousel";
 
 export default function FacilitiesPage() {
   return (
-    <div className="mx-auto max-w-6xl">
+    <div className="mx-auto px-5 md:max-w-6xl">
       Our college has a hostel and a library for students so that they can learn
       how to live independently and learn things that are important in life for
       personal development and new technologies for their growth in career
@@ -50,8 +50,13 @@ export default function FacilitiesPage() {
         <h1 className="text-blue-500  mb-3 text-2xl text-center underline tracking-wide">
           2. LIBRARY AND MEDIA CENTER
         </h1>
-        <div className="my-10 flex justify-center">
-          <Carousel width={500} showArrows={true} showThumbs={false}>
+        <div className="my-10 flex justify-center px-10 max-w-[100px] mx-auto">
+          <Carousel
+            showArrows={true}
+            showThumbs={false}
+            className="px-5 "
+            width={350}
+          >
             <div>
               <img src="lib.png" />
             </div>
@@ -98,7 +103,7 @@ export default function FacilitiesPage() {
             </tr>
           </tbody>
         </table>
-        <div className="flex">
+        <div className="flex flex-wrap">
           <div>
             <h1 className="font-semibold">Ground Floor:</h1>
             <ul className="list-disc ml-8">

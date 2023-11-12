@@ -1,6 +1,6 @@
 export default function CoursesPage() {
   return (
-    <div className="mx-auto max-w-6xl">
+    <div className="mx-auto max-w-6xl px-5">
       <h1 className="text-xl font-bold my-3">
         Procedure For Admission Into Diploma Courses:
       </h1>

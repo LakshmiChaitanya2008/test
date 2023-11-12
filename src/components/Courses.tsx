@@ -8,44 +8,46 @@ export default function Courses() {
 
   const containerRef1 = useRef(null);
   const containerRef2 = useRef(null);
-
+  let mm = gsap.matchMedia();
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const firstRowContainer = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef1.current,
-        start: "top center",
-        once: true,
-        end: "center center",
-        scrub: false,
-      },
+    mm.add("(min-width: 800px)", () => {
+      const firstRowContainer = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRef1.current,
+          start: "top center",
+          once: true,
+          end: "center center",
+          scrub: false,
+        },
+      });
+
+      firstRowContainer.fromTo(
+        containerRef1.current,
+        { x: "-100%", once: true },
+        { x: "0%", duration: 1, opacity: 1, delay: 0.3, once: true },
+        "-=0.5"
+      );
+
+      const secondRowContainer = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRef2.current,
+          start: "top center",
+          end: "center center",
+          once: true,
+          scrub: false,
+        },
+      });
+
+      secondRowContainer.fromTo(
+        containerRef2.current,
+        { x: "100%", once: true },
+
+        { x: "0%", duration: 1, opacity: 1, delay: 0.3, once: true },
+        "-=0.5"
+      );
     });
-
-    firstRowContainer.fromTo(
-      containerRef1.current,
-      { x: "-100%", once: true },
-      { x: "0%", duration: 1.5, opacity: 1, delay: 0.5, once: true },
-      "-=0.5"
-    );
-
-    const secondRowContainer = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef2.current,
-        start: "top center",
-        end: "center center",
-        once: true,
-        scrub: false,
-      },
-    });
-
-    secondRowContainer.fromTo(
-      containerRef2.current,
-      { x: "100%", once: true },
-
-      { x: "0%", duration: 1.5, opacity: 1, delay: 0.5, once: true },
-      "-=0.5"
-    );
   }, []);
   return (
     <div className="mt-[6vw]">

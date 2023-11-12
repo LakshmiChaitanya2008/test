@@ -24,7 +24,7 @@ h6 {
 }
 
 .hero h1 {
-  @apply text-[12vw] font-extrabold;
+  @apply text-[20vw] leading-[75px] md:text-[11vw] tracking-wide md:leading-none font-extrabold;
 }
 
 .courses,
@@ -47,27 +47,27 @@ h6 {
 }
 
 .c:nth-child(1)::before {
-  @apply bg-[url(https://images.unsplash.com/photo-1625123817473-eede237e097b?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)];
+  @apply bg-[url(/EEE.jpg)];
 }
 
 .c:nth-child(2)::before {
-  @apply bg-[url(https://images.unsplash.com/photo-1593630265256-d2cc162ab58f?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)];
+  @apply bg-[url(/CIVIL.jpg)];
 }
 
 .c:nth-child(3)::before {
-  @apply bg-[url(https://images.unsplash.com/photo-1610409012993-8ad38f27f186?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)];
+  @apply bg-[url(/MECH.jpg)];
 }
 
 .c2:nth-child(1)::before {
-  @apply bg-[url(https://images.unsplash.com/photo-1602493054376-d9dc3dfcbc7d?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)];
+  @apply bg-[url(/ECE.jpg)];
 }
 
 .c2:nth-child(2)::before {
-  @apply bg-[url(https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)];
+  @apply bg-[url(/CME.jpg)];
 }
 
 .c2:nth-child(3)::before {
-  @apply bg-[url(https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)];
+  @apply bg-[url(/AIML.jpg)];
 }
 
 .c-name {
@@ -79,5 +79,5 @@ h6 {
 }
 
 .overlay-nav_item {
-  @apply p-2 text-2xl w-[20%] text-center rounded-full text-black hover:shadow-2xl cursor-pointer hover:bg-green-100 font-bold tracking-widest transition-all;
+  @apply p-2 text-2xl md:w-[20%] text-center rounded-full text-black hover:shadow-2xl cursor-pointer hover:bg-green-100 font-bold tracking-widest transition-all;
 }

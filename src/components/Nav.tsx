@@ -8,7 +8,7 @@ export default function Nav() {
     <nav className="flex justify-between w-full pr-16 mt-4 px-5 main">
       <Link to="/">
         <div className="flex cursor-pointer">
-          <img src="logo.png" width={140} alt="Logo" className="" />
+          <img src="logo.png" alt="Logo" className="md:w-[140px] w-[110px]" />
           <h1 className="mt-10 text-2xl ml-7 tracking-wider md:block hidden">
             AANM & VVRSR POLYTECHNIC
           </h1>

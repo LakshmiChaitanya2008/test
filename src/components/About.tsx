@@ -47,7 +47,7 @@ export default function About() {
           <a href="#">
             <img
               className="rounded-t-lg h-[200px] mx-auto"
-              src="https://aanm-vvrsrpolytechnic.ac.in/images/polytech/image1.jpg"
+              src="/AANM.jpg"
               alt=""
             />
           </a>
@@ -64,7 +64,7 @@ export default function About() {
           <a href="#">
             <img
               className="rounded-t-lg h-[200px] w-auto mx-auto"
-              src="https://static.vecteezy.com/system/resources/previews/010/872/627/original/3d-job-interview-illustration-png.png"
+              src="/Placements.png"
               alt=""
             />
           </a>
@@ -85,7 +85,7 @@ export default function About() {
           <a href="#">
             <img
               className="rounded-t-lg h-[200px] w-1/2 mx-auto"
-              src="https://www.aanm-vvrsrpolytechnic.ac.in/images/trophyrankers.png"
+              src="/Rankers.png"
               alt=""
             />
           </a>
@@ -106,7 +106,7 @@ export default function About() {
           <a href="#">
             <img
               className="rounded-t-lg h-[200px] w-1/2 mx-auto"
-              src="https://aanm-vvrsrpolytechnic.ac.in/images/polytech/Image2.jpg"
+              src="/VVRSR.jpg"
               alt=""
             />
           </a>

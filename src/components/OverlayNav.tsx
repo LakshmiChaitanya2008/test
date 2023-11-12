@@ -1,6 +1,7 @@
 // OverlayNav.tsx
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import { Link } from "wouter";
 
 export default function OverlayNav({
   isOpen,
@@ -54,11 +55,27 @@ export default function OverlayNav({
           />
         </svg>
       </div>
-      <p className="overlay-nav_item">Home</p>
-      <p className="overlay-nav_item">Courses</p>
-      <p className="overlay-nav_item">Facilities</p>
+      <p className="overlay-nav_item">
+        <Link to="/" onClick={() => setOverlayOpen(false)}>
+          Home
+        </Link>
+      </p>
+      <p className="overlay-nav_item">
+        <Link to="/courses" onClick={() => setOverlayOpen(false)}>
+          Courses
+        </Link>
+      </p>
+      <p className="overlay-nav_item">
+        <Link to="/facilities" onClick={() => setOverlayOpen(false)}>
+          Facilities
+        </Link>
+      </p>
       <p className="overlay-nav_item">Placements</p>
-      <p className="overlay-nav_item">Gallery</p>
+      <p className="overlay-nav_item">
+        <Link to="/gallery" onClick={() => setOverlayOpen(false)}>
+          Gallery
+        </Link>
+      </p>
       <p className="overlay-nav_item">Acheivements</p>
       <p className="overlay-nav_item">Alumini</p>
       <p className="overlay-nav_item">Others</p>

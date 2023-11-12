@@ -1,4 +1,3 @@
-// Nav.tsx
 import { useState } from "react";
 import OverlayNav from "./OverlayNav";
 
@@ -6,10 +5,10 @@ export default function Nav() {
   const [isOverlayOpen, setOverlayOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between w-full pr-16 mt-4">
+    <nav className="flex justify-between w-full pr-16 mt-4 px-5 main">
       <div className="flex">
         <img src="logo.png" width={140} alt="Logo" className="" />
-        <h1 className="mt-10 text-2xl ml-7 tracking-wider">
+        <h1 className="mt-10 text-2xl ml-7 tracking-wider md:block hidden">
           AANM & VVRSR POLYTECHNIC
         </h1>
       </div>

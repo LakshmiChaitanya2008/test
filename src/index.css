@@ -29,12 +29,12 @@ h6 {
 
 .courses,
 .courses2 {
-  @apply min-h-screen w-full relative flex items-center justify-between px-[1vw];
+  @apply min-h-screen w-full relative flex flex-wrap items-center justify-between px-[1vw];
 }
 
 .c,
 .c2 {
-  @apply h-[90vh] w-[30%] flex flex-col items-center justify-center rounded-lg font-semibold shadow-xl relative uppercase overflow-hidden;
+  @apply h-[90vh] w-[324px] my-2 mx-auto flex flex-col items-center flex-wrap justify-center rounded-lg font-semibold shadow-xl relative uppercase overflow-hidden;
 }
 
 .c::before,

@@ -42,11 +42,11 @@ export default function About() {
         become competent contributors to the Nation’s wealth and advancements in
         engineering world.
       </p>
-      <div className="flex justify-around">
-        <div className="max-w-xs  border border-gray-200 rounded-lg mt-5">
+      <div className="flex justify-around flex-wrap">
+        <div className="max-w-[200px]  border border-gray-200 rounded-lg mt-5">
           <a href="#">
             <img
-              className="rounded-t-lg h-[200px] w-1/2 mx-auto"
+              className="rounded-t-lg h-[200px] mx-auto"
               src="https://aanm-vvrsrpolytechnic.ac.in/images/polytech/image1.jpg"
               alt=""
             />

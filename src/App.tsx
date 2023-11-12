@@ -6,6 +6,7 @@ import { Route } from "wouter";
 import CoursesPage from "./pages/CoursesPage";
 import FacilitiesPage from "./pages/FacilitiesPage";
 import GalleryPage from "./pages/GalleryPage";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
       <Route path="/gallery">
         <GalleryPage />
       </Route>
+      <Footer />
     </div>
   );
 }
